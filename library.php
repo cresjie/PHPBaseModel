@@ -137,7 +137,7 @@ class Model implements JsonSerializable
         
         
 
-		$stmt = $pdo->prepare("INSERT INTO {$this->table} (firstname, lastname) VALUES ($placeholder)");
+		$stmt = $pdo->prepare("INSERT INTO {$this->table} ({$keys}) VALUES ({$placeholder})");
 		
 		
 		
